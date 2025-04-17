@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY experience on Css</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">My Website</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#skills">Get Skill</a></li>
+      <li><a href="#image">Image</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content with Grid Layout -->
+  <main>
+    <!-- Optional Sidebar -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#skills">Tasks</a></li>
+        <li><a href="#image">Gallery</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#register">Sign Up</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Sections -->
+    <div class="content">
+      <section class="section-block" id="todo">
+        <h2>Get skills </h2>
+        <ol type="I">
+          <li>Learn HTML</li>
+          <li>Practice CSS</li>
+          <li>Explore JavaScript</li>
+          <li>Build Projects</li>
+          <li>Deploy Website</li>
+        </ol>
+      </section>
+
+      <section class="section-block" id="image">
+        <h2>Inspiration Image</h2>
+        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="Team working together">
+      </section>
+
+      <section class="section-block" id="contacts">
+        <h2>Contact List</h2>
+        <table id="contact-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Eliah Muyizere</td>
+              <td>Kigali, Rwanda</td>
+              <td>+250788123456</td>
+              <td>eliah@example.com</td>
+            </tr>
+            <tr>
+              <td>Jane Doe</td>
+              <td>Nairobi, Kenya</td>
+              <td>+254701234567</td>
+              <td>jane@example.com</td>
+            </tr>
+            <tr>
+              <td>John </td>
+              <td>Kigali, Rwanda</td>
+              <td>+250789107528</td>
+              <td>johnmakuza@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary Johnson</td>
+              <td>Kampala, Uganda</td>
+              <td>+256781234567</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>David Kim</td>
+              <td>Addis Ababa, Ethiopia</td>
+              <td>+251911234567</td>
+              <td>david@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section-block" id="register">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+          </div>
+
+          <div>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+
+          <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+              <option value="">Select your country</option>
+              <option value="rwanda">Rwanda</option>
+              <option value="kenya">Kenya</option>
+              <option value="uganda">Uganda</option>
+              <option value="tanzania">Tanzania</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+
+          <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="design" name="interests" value="design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+          </div>
+
+          <div>
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>
